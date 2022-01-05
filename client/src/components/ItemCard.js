@@ -40,7 +40,7 @@ function ItemCard({ item, setItems }) {
     <Card>
           
           <Card.Content>
-          <Image src={item.imgurl} alt={item.name} floated='right' size='mini'/>
+          <Image src={item.imgurl} alt={item.name} floated='right' size='small'/>
             <Card.Header>{item.name}</Card.Header>
             <Card.Meta>{item.food_group} </Card.Meta>
             <Card.Meta>{item.amount} {item.measurement_type}</Card.Meta>
