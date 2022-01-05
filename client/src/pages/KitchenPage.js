@@ -123,9 +123,9 @@ function KitchenPage() {
              ) : (
             <>
           <p>No items Found.....</p>
-            <Button>
+          <a href="/NewItem"> <Button>
             Make a New Item
-            </Button>
+            </Button></a>
           </>
           )}
       </Card.Group>  
@@ -144,9 +144,9 @@ function KitchenPage() {
              ) : (
             <>
           <p>No items Found.....</p>
-            <Button>
+          <a href="/NewItem"><Button>
             Make a New Item
-            </Button>
+            </Button></a>
           </>
           )}
       </Card.Group>  
@@ -165,9 +165,9 @@ function KitchenPage() {
              ) : (
             <>
           <p>No items Found.....</p>
-            <Button>
+          <a href="/NewItem"><Button>
             Make a New Item
-            </Button>
+            </Button></a>
           </>
           )}
       </Card.Group>  </Accordion.Body></Accordion.Item>
@@ -185,9 +185,9 @@ function KitchenPage() {
              ) : (
             <>
           <p>No items Found.....</p>
-            <Button>
+          <a href="/NewItem"><Button>
             Make a New Item
-            </Button>
+            </Button></a>
           </>
           )}
           </Card.Group>  
