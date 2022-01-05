@@ -115,7 +115,7 @@ function KitchenPage() {
                 <h2>Your Kitchen: </h2>
             <Accordion.Header>Your Fridge:</Accordion.Header>
             <Accordion.Body>
-            <Card.Group itemsPerRow={3}>
+            <Card.Group itemsPerRow={2}>
             {items.length > 0 ? (
             items
             .filter((item) => item.in_fridge === true)
@@ -136,7 +136,7 @@ function KitchenPage() {
       
       <Accordion.Header>Your Freezer:</Accordion.Header>
               <Accordion.Body>
-            <Card.Group itemsPerRow={3}>
+            <Card.Group itemsPerRow={2}>
             {items.length > 0 ? (
             items
             .filter((item) => item.in_freezer === true)
@@ -157,7 +157,7 @@ function KitchenPage() {
            <Accordion.Header> Your Pantry: </Accordion.Header>
            <Accordion.Body>
 
-           <Card.Group itemsPerRow={3}>
+           <Card.Group itemsPerRow={2}>
             {items.length > 0 ? (
             items
             .filter((item) => item.in_pantry === true)
@@ -176,7 +176,7 @@ function KitchenPage() {
 
       <Accordion.Header>Your Shopping List:</Accordion.Header>
         <Accordion.Body>
-          <Card.Group itemsPerRow={3}>
+          <Card.Group itemsPerRow={2}>
             {items.length > 0 ? (
             items
             .filter((item) => item.in_shopping_list === true)
