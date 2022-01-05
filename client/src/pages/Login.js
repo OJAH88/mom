@@ -1,8 +1,8 @@
 import { useState } from "react";
 import LoginForm from "../components/LoginForm";
 import RegistrationForm from "../components/RegistrationForm";
-import { Button, Form, Input } from 'react-bootstrap'
-import { Container, Image, Divider} from "semantic-ui-react";
+import { Form, Input } from 'react-bootstrap'
+import { Button, Container, Image, Divider} from "semantic-ui-react";
 import mama from '../images/mama.gif'
 
 

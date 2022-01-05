@@ -1,6 +1,5 @@
 import React from 'react'
-import {Image, Container, Grid } from "semantic-ui-react";
-import {Button} from "react-bootstrap"
+import {Image, Button, Container, Grid } from "semantic-ui-react";
 import { useHistory } from "react-router-dom";
 import mama from '../images/mama.gif'
 
@@ -27,10 +26,10 @@ function NavBar({user, setUser, onLogin}){
 
             
             <Grid.Column width={14} textAlign='left'>
-            <a href="/"><Button>Home</Button></a> {" "}
-            <a href="/NewItem"><Button>New Item</Button></a>{" "}
+            <a href="/"><Button color="blue">Home</Button></a> {" "}
+            <a href="/NewItem"><Button color="blue">New Item</Button></a>{" "}
             {/* <a href="/FoodLog"><Button>Food Log</Button></a>             */}
-            <a href="/logout"><Button onClick={handleLogout}>Logout</Button></a>
+            <a href="/logout"><Button color="red" onClick={handleLogout}>Logout</Button></a>
             </Grid.Column>
             <Grid.Column width={2} textAlign='right'>
             <Image src={mama} avatar /> 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Button, Form, Input } from 'react-bootstrap'
+import { Form, Input } from 'react-bootstrap'
 import { useHistory } from 'react-router'
-import {  Divider } from "semantic-ui-react";
+import {  Divider, Button } from "semantic-ui-react";
 
 function RegistrationForm({ onLogin }) {
   const [email, setEmail] = useState("");
