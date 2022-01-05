@@ -123,7 +123,7 @@ function KitchenPage() {
              ) : (
             <>
           <p>No items Found.....</p>
-          <a href="/NewItem"> <Button>
+          <a href="/NewItem"> <Button color="blue">
             Make a New Item
             </Button></a>
           </>
@@ -144,7 +144,7 @@ function KitchenPage() {
              ) : (
             <>
           <p>No items Found.....</p>
-          <a href="/NewItem"><Button>
+          <a href="/NewItem"><Button color="blue">
             Make a New Item
             </Button></a>
           </>
@@ -165,7 +165,7 @@ function KitchenPage() {
              ) : (
             <>
           <p>No items Found.....</p>
-          <a href="/NewItem"><Button>
+          <a href="/NewItem"><Button color="blue">
             Make a New Item
             </Button></a>
           </>
@@ -185,7 +185,7 @@ function KitchenPage() {
              ) : (
             <>
           <p>No items Found.....</p>
-          <a href="/NewItem"><Button>
+          <a href="/NewItem"><Button color="blue">
             Make a New Item
             </Button></a>
           </>
