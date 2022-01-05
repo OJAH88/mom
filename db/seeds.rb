@@ -43,7 +43,7 @@ Item.create!(user_id: 1, kitchen_id: 1, name: "Cucumber", food_group: "Vegetable
 
 Item.create!(user_id: 1, kitchen_id: 1, name: "Apple", food_group: "Fruit", description: "An apple is an edible fruit produced by an apple tree. Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today.", amount: 4, measurement_type: "units", in_kitchen: true, in_shopping_list: false, in_fridge: true, in_freezer: false, in_pantry: false, imgurl: "https://www.applesfromny.com/wp-content/uploads/2020/06/SnapdragonNEW.png")
 
-Item.create!(user_id: 1, kitchen_id: 1, name: "Strawberries", food_group: "Fruit", description: "The garden strawberry is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit. The fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness. ", amount: 1, measurement_type: "container", in_kitchen: true, in_shopping_list: false, in_fridge: true, in_freezer: false, in_pantry: false, imgurl: "https://assets.bonappetit.com/photos/58dbf6c8a6614f6f50816994/4:3/w_2591,h_1943,c_limit/20170323%20MOB6231_FINAL_crop.jpg")
+Item.create!(user_id: 1, kitchen_id: 1, name: "Strawberry", food_group: "Fruit", description: "The garden strawberry is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit. The fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness. ", amount: 1, measurement_type: "container", in_kitchen: true, in_shopping_list: false, in_fridge: true, in_freezer: false, in_pantry: false, imgurl: "https://assets.bonappetit.com/photos/58dbf6c8a6614f6f50816994/4:3/w_2591,h_1943,c_limit/20170323%20MOB6231_FINAL_crop.jpg")
 
 Item.create!(user_id: 1, kitchen_id: 1, name: "Frozen Strawberries", food_group: "Fruit", description: "A bag of frozen strawberries", amount: 2, measurement_type: "units", in_kitchen: true, in_shopping_list: false, in_fridge: false, in_freezer: true, in_pantry: false, imgurl: "https://i5.walmartimages.com/asr/763629c1-8d89-4878-b565-70ebc2631d15_3.a9bfbca535e87648520e9d876decbb4d.jpeg")
 
@@ -72,9 +72,21 @@ Item.create!(user_id: 1, kitchen_id: 1, name: "Butter", food_group: "Dairy", des
 
 
 
-# 21.times do
-#     Item.create!(user_id: 2, kitchen_id: 2, name: Faker::Food.ingredient, food_group: "", description: Faker::Food.description, amount: Faker::Number.within(range: 1..19), measurement_type: "units", in_kitchen: true, in_shopping_list: false, in_fridge: true, in_freezer: false, in_pantry: false, imgurl: Faker::LoremFlickr.image(size: "300x300", search_terms: ['food']))
-# end
+25.times do
+    Item.create!(user_id: 1, kitchen_id: 1, name: "Sample Data".ingredient, food_group: "foo bar", description: "foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar", amount: Faker::Number.within(range: 1..19), measurement_type: "units", in_kitchen: true, in_shopping_list: false, in_fridge: true, in_freezer: false, in_pantry: false, imgurl: Faker::LoremFlickr.image(size: "300x300", search_terms: ['food']))
+end
+
+31.times do
+    Item.create!(user_id: 1, kitchen_id: 1, name: "Sample Data".ingredient, food_group: "foo bar", description: "foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar", amount: Faker::Number.within(range: 1..19), measurement_type: "units", in_kitchen: true, in_shopping_list: false, in_fridge: false, in_freezer: true, in_pantry: false, imgurl: Faker::LoremFlickr.image(size: "300x300", search_terms: ['food']))
+end
+
+18.times do
+    Item.create!(user_id: 1, kitchen_id: 1, name: "Sample Data".ingredient, food_group: "foo bar", description: "foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar", amount: Faker::Number.within(range: 1..19), measurement_type: "units", in_kitchen: true, in_shopping_list: false, in_fridge: false, in_freezer: false, in_pantry: true, imgurl: Faker::LoremFlickr.image(size: "300x300", search_terms: ['food']))
+end
+
+9.times do
+    Item.create!(user_id: 1, kitchen_id: 1, name: "Sample Data".ingredient, food_group: "foo bar", description: "foo bar foo bar foo bar foo bar foo bar foo bar foo bar foo bar", amount: Faker::Number.within(range: 1..19), measurement_type: "units", in_kitchen: true, in_shopping_list: true, in_fridge: false, in_freezer: false, in_pantry: false, imgurl: Faker::LoremFlickr.image(size: "300x300", search_terms: ['food']))
+end
 
 
 # 19.times do
