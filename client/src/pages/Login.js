@@ -12,6 +12,8 @@ function Login({ onLogin }) {
   return (
     <Container text>
       <center><Image src={mama} /></center>
+      <h3>Demo: </h3>
+      <h5>email: foo@bar.com password: test</h5>
       {showLogin ? (
         <>
         <h3>Login</h3>
